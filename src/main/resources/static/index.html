@@ -3,12 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TODO App</title>
+    <title>TODO v1</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="todo.js"></script>
 </head>
 <body>
-Hello todo app!
+
+<div class="container">
+    <div class="box is-size-2">TODO app.v1</div>
+
+    <div id="123" class="is-primary notification">
+        Todo 1
+        <button class="delete is-large"></button>
+    </div>
+
+    <div id="124" class="is-primary notification">
+        Todo 2
+        <button class="delete is-large"></button>
+    </div>
+
+    <div id="125" class="is-primary notification">
+        Todo 3
+        <button class="delete is-large"></button>
+    </div>
+
+    <div class="grid">
+        <input class="input is-medium cell is-col-span-3" type="text" placeholder="Medium input"/>
+        <button id="add" class="button is-dark cell">add</button>
+    </div>
+</div>
+
 </body>
 </html>
