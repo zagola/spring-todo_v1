@@ -17,4 +17,12 @@ public class TodoRepository {
                 BeanPropertyRowMapper.newInstance(Todo.class));
     }
 
+    public void addTask(String task) {
+        jdbcTemplate.update("INSERT INTO Todo (description) VALUES (?)", task);
+    }
+
+    public int deleteTask(int id) {
+        return jdbcTemplate.update("DELETE FROM Todo WHERE id=?", id);
+    }
+
 }

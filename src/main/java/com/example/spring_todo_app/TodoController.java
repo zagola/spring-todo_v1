@@ -14,4 +14,15 @@ public class TodoController {
     public List<Todo> getAll() {
         return todoRepository.getAll();
     }
+
+    @PostMapping("/add")
+    public void addTask(@RequestBody String task) {
+        todoRepository.addTask(task);
+    }
+
+    @DeleteMapping("/delete/{id}")
+    public int deleteTask(@PathVariable("id") int id) {
+        return todoRepository.deleteTask(id);
+    }
+
 }
