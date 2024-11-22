@@ -16,8 +16,9 @@ public class TodoController {
     }
 
     @PostMapping("/add")
-    public void addTask(@RequestBody String task) {
-        todoRepository.addTask(task);
+    public void addTask(@RequestBody Task message) {
+        System.out.println(message.getTask());
+        todoRepository.addTask(message.getTask());
     }
 
     @DeleteMapping("/delete/{id}")

@@ -8,7 +8,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Todo {
-    private int id;
-    private String description;
+public class Task {
+    public String getTask() {
+        return task;
+    }
+
+    private String task;
 }
